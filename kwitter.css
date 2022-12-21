@@ -1,0 +1,76 @@
+.leb{
+    font-family: 'Bungee', cursive;
+}
+#parent{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+#l,#g{
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+
+}
+#l{
+    background-color: rgb(226, 186, 227);
+}
+#g{
+    background-color:rgb(238, 198, 255);
+   
+    
+}
+.heading{
+    font-size: 80px;
+    text-shadow: 4px 2px 3px rgb(107, 94, 94);
+    box-shadow: inset 0px 1px 14px 0px ;
+    width: 450px;
+    border-radius:40px;
+}
+#logo{
+    height: 300px;
+    width: 300px;
+    border-radius: 60px;
+    box-shadow: inset 0px 1px 14px 0px ;
+}
+#img{
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    padding: 10px;
+    box-shadow: inset 0px 1px 14px 0px ;
+
+}
+#login_div{
+    width: 500px;
+    height:500px;
+    margin-top: 140px;
+}
+#heading2{
+    font-size: 60px;
+    text-shadow: 4px 2px 3px rgb(107, 94, 94);
+    width: 450px;
+    border-radius:40px;
+    
+}
+#username{
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    height:50px;
+    width: 300px;
+}
+#btn1{
+    margin-top: 20px;
+    height: 80px;
+    width: 200px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(185, 150, 185);
+    border-radius: 15px;
+    text-shadow: 4px 2px 3px rgb(107, 94, 94);
+    border-color:rgb(86, 70, 86) ;
+    border-width: 4px;
+   
+
+}

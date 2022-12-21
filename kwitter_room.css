@@ -1,0 +1,54 @@
+.parent{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+.child1,.child2{
+    width: 50%;
+    display: inline-block;
+    height:100%
+
+}
+.child1{
+    background-color: rgb(226, 186, 227);
+}
+.child2{
+    background-color:rgb(238, 198, 255);
+}
+#btn1{
+    padding: 13px;
+    padding-left: 8px;
+    font-size:20px ;
+    background-color: #c1424200;
+    margin-top: 4px;
+    margin-left: -4px;
+    border-width: 5px;
+    border-color:rgb(86, 70, 86) ;
+}
+.leb{
+    font-family: 'Bungee', cursive;
+}
+#btn_add{
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(80, 193, 80);
+    border-width: 4px;
+    border-color:rgb(86, 70, 86) ;
+
+}
+
+#box{
+    background-color: rgba(255, 255, 255, 0.721);
+    width: 450px;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 14px 0px ;
+
+ 
+}
+
+#img2{
+    height: 200px;
+    border-radius: 90px;
+
+}

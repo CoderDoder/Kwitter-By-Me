@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Kwitter</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="kwitter_room.css">   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="parent">
+            <span class="child1">
+            <button id="btn1" class="leb" onclick="logout()" >Logout</button>
+            <center>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <div id="box">
+                    <br>
+                    <br><br>
+                 <h1 id="user_name" class="leb">Welcome User!!</h1>
+                 <br>
+                 <img src="https://img.freepik.com/premium-vector/chatting-design-concept-with-hand-holding-cellphone_7087-798.jpg" alt="error" id="img2">
+                 <br>
+                 <br>
+                 <input type="text" id="roomname_input" placeholder="roomname" class="leb">
+                 <br>
+                 <br>
+                 <button id="btn_add" onclick="addroom()" class="leb">Add Room</button>
+                </div>
+            </center>
+            </span>
+            <span class="child2"> 
+                <center>
+                    <br>
+                    <br>
+                    <br>
+                     <h1 class="leb">
+                    Trending Rooms
+                    </h1>
+                    <div id="output">
+                        
+                    </div>
+            </center>
+            </span>
+        </div>
+
+       <script src="kwitter_room.js"></script>
+    </body>
+</html>
