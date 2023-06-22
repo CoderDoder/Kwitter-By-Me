@@ -1,18 +1,24 @@
 var firebaseConfig = {
-      apiKey: "AIzaSyDcaFAKQtWnO-a5UXWJakNnC44xwDP9xsk",
-      authDomain: "kwitter-specify.firebaseapp.com",
-      databaseURL: "https://kwitter-specify-default-rtdb.firebaseio.com",
-      projectId: "kwitter-specify",
-      storageBucket: "kwitter-specify.appspot.com",
-      messagingSenderId: "28945690281",
-      appId: "1:28945690281:web:aeefb59bed5a6ef1d883b8"
+      apiKey: "AIzaSyD4-cvUegewTRZkcSOxCBsKZIoiuWJEPaQ",
+      authDomain: "kwitter-zinda-hai.firebaseapp.com",
+      projectId: "kwitter-zinda-hai",
+      databaseURL:"https://kwitter-zinda-hai-default-rtdb.firebaseio.com/",
+      storageBucket: "kwitter-zinda-hai.appspot.com",
+      messagingSenderId: "120935220963",
+      appId: "1:120935220963:web:c08127e99ac157a7d527d6"
     };
     
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+      firebase.initializeApp(firebaseConfig);
    var username=localStorage.getItem("username");
-var roomname=localStorage.getItem("room_name");
-function getData() { firebase.database().ref("/"+roomname).on('value', function(snapshot) { document.getElementById("output").innerHTML = ""; snapshot.forEach(function(childSnapshot) { childKey  = childSnapshot.key; childData = childSnapshot.val(); if(childKey != "purpose") {
+var roomname=localStorage.getItem("roomname");
+function getData() { 
+      firebase.database().ref("/"+roomname).on('value', function(snapshot) { 
+            document.getElementById("output").innerHTML = ""; 
+            snapshot.forEach(function(childSnapshot) { 
+                  childKey  = childSnapshot.key; 
+                  childData = childSnapshot.val(); 
+                  if(childKey != "purpose") {
          firebase_message_id = childKey;
          message_data = childData;
          console.log(firebase_message_id);
@@ -42,13 +48,14 @@ function getData() { firebase.database().ref("/"+roomname).on('value', function(
                   
             });
       }
+      getData();
       
       function logout(){
             localStorage.removeItem("username");
-            localStorage.removeItem("room_name");
+            localStorage.removeItem("roomname");
             window.location="index.html"
       }
-getData();
+
 
 function send(){
       message=document.getElementById("message_input").value;

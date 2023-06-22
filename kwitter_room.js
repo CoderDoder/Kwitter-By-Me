@@ -1,16 +1,15 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyDcaFAKQtWnO-a5UXWJakNnC44xwDP9xsk",
-  authDomain: "kwitter-specify.firebaseapp.com",
-  databaseURL: "https://kwitter-specify-default-rtdb.firebaseio.com",
-  projectId: "kwitter-specify",
-  storageBucket: "kwitter-specify.appspot.com",
-  messagingSenderId: "28945690281",
-  appId: "1:28945690281:web:aeefb59bed5a6ef1d883b8"
+  apiKey: "AIzaSyD4-cvUegewTRZkcSOxCBsKZIoiuWJEPaQ",
+  authDomain: "kwitter-zinda-hai.firebaseapp.com",
+  projectId: "kwitter-zinda-hai",
+  databaseURL:"https://kwitter-zinda-hai-default-rtdb.firebaseio.com/",
+  storageBucket: "kwitter-zinda-hai.appspot.com",
+  messagingSenderId: "120935220963",
+  appId: "1:120935220963:web:c08127e99ac157a7d527d6"
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
+  firebase.initializeApp(firebaseConfig);
   var username=localStorage.getItem("username");
   document.getElementById("user_name").innerHTML="Welcome "+username+"!";
 
@@ -36,14 +35,17 @@ firebase.initializeApp(firebaseConfig);
    document.getElementById("output").innerHTML+=row;
    //End code
    });});}
+   getData();
+
 function redirect(name){
  console.log(name);
- localStorage.setItem("room_name",name);
+ localStorage.setItem("roomname",name);
  window.location="room_page.html";
 }
-getData();
 function logout(){
+  localStorage.removeItem("username");
+localStorage.removeItem("roomname");
 window.location="index.html";
-localStorage.removeItem("username");
+
 }
 
